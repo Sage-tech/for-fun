@@ -25,16 +25,14 @@ body {
 }
 h1,
 h2{
-font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: 'Abolition Regular';
 }
 h1 {  
-  font-size: 5.625rem; /* 90px/16px  */
-  color: rgba(255, 255, 255, 1);
-  text-transform: uppercase;
+  
+  font-size: 3rem; /* 26px/16px */
+  letter-spacing:.0655em;
   font-weight: normal;
-  line-height: 1.3;
-  text-shadow: 2px 2px 1px rgb(28, 31, 65);
-  margin:12px 0 0;
+  padding-bottom: 10px;
 }
 
 h2 {
