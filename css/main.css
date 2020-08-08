@@ -85,12 +85,6 @@ li {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 
 /* Pseudo-classes ------------------ */
 
@@ -103,19 +97,27 @@ a:visited {
   color: rgb(255, 255, 255);
 }
 
-a:hover {
-  color: #48525c
-}
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: rgb(65, 202, 202);
-  color:  #fff
+  color:  #fff;
 }
 
 a:active {
   color: lightcoral;
 }
-
+.to-top:hover{
+	color: rgb(65, 202, 202)
+  border-color:rgb(78, 203, 235);
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 /* Main Styles --------------------- */
 
 .title {
@@ -290,23 +292,18 @@ padding: 20px 0;
 	border-color:inherit;
 	transition:transform .5s ease-in;
 }
-.to-top:hover{
-	color:rgb(78, 203, 235);
-  border-color:rgb(78, 203, 235);
+
+
+
+
+
+
+
+
+
+img {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
-.to-top:hover:before{
-	transform: rotate(360deg);
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
