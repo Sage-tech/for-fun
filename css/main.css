@@ -10,7 +10,6 @@
 }
 
 
-
 /* Base Styles -------------------- */
 
 
@@ -71,19 +70,46 @@ li {
   margin-bottom: 10px;
 }
 
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
 /* Pseudo-classes ------------------ */
 
 a:link {
-  color: rgb(242, 242, 247);
+  color: #fff
   text-decoration: none;
 }
 
 a:visited {
-  color: rgb(78, 203, 235);
+  color: rgb(255, 255, 255);
 }
 
 a:hover {
   color: #48525c
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(65, 202, 202);
+  color:  #fff
 }
 
 a:active {
@@ -91,19 +117,6 @@ a:active {
 }
 
 /* Main Styles --------------------- */
-
-
-
-.main-header {
-  
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding-top: 100px;
-  background-size: cover;
-}
 
 .title {
   font-size: 1.625rem; /* 26px/16px */
@@ -123,7 +136,10 @@ a:active {
 .main-footer {
   text-align: center;
 }
+p{
+margin-top: 100px;
 
+}
 .primary-content {
 	padding-top: 25px;
   padding-bottom: 95px;
@@ -132,7 +148,7 @@ a:active {
 .secondary-content {
 	padding-top: 80px;
   padding-bottom: 70px;
-  border-bottom: 2px solid #dfe2e6;
+  border-bottom: 2px solid #868c94;
 }
 
 .callout {
@@ -201,33 +217,6 @@ a:active {
 /* Media Queries -------------------- */
 
 
-@media (max-width: 960px) {
-  body {
-    background: royalblue;
-  }
-p {
-    color: white;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    background: darkred; 
-  }
-}
-@media (min-width: 481px) and (max-width:700px){
-body {
-background: seagreen;
-}
-p {
-    color: white;
-  }
-}
-
-
-
-
-
 @media (max-width 1024px) {
 .primary-content,
 .secondary-content,{
@@ -277,9 +266,37 @@ padding: 20px 0;
 
 
 
-
-
-
+.to-top{
+	color:rgb(78, 203, 235);;
+	padding-top:2em;
+	display:inline-block;/* or block */
+	position:relative;
+	border-color:rgb(78, 203, 235);;
+	text-decoration:none;
+	transition:all .3s ease-out;
+}
+.to-top:before{
+	content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .13em rgb(78, 203, 235);
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-top:hover{
+	color:rgb(78, 203, 235);
+  border-color:rgb(78, 203, 235);
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
+}
 
 
 
