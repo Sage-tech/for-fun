@@ -26,18 +26,17 @@ body {
   background-size: cover;
 }
 .class-for-page{
-    background: linear-gradient(#9fcac8, transparent 90%),
+    background: linear-gradient(#9fcac8, transparent 80%),
                 linear-gradient(0deg, rgb(110, 123, 126), transparent),   
                  no-repeat center;
     background-size: cover;
 }
-.class-for-about{
-  background: linear-gradient(#9fcac8, transparent 90%),
-  linear-gradient(0deg, rgb(110, 123, 126), transparent),   
-   no-repeat center;
-background-size: cover;
-}
 
+.class-for-about{
+  background: linear-gradient(#345f64, transparent 80%),
+              linear-gradient(0deg, rgb(191, 203, 207), transparent),   
+               no-repeat center;
+  background-size: cover;
 }
 h1,
 h2{
@@ -52,6 +51,7 @@ h1 {
 }
 
 h2 {
+  color: rgb(19, 29, 31);
   font-size: 3.3125em; /* 53px/16px  */
   font-weight: normal;
   line-height: 1.1;
