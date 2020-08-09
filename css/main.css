@@ -31,6 +31,14 @@ body {
                  no-repeat center;
     background-size: cover;
 }
+.class-for-about{
+  background: linear-gradient(#9fcac8, transparent 90%),
+  linear-gradient(0deg, rgb(110, 123, 126), transparent),   
+   no-repeat center;
+background-size: cover;
+}
+
+}
 h1,
 h2{
   font-size: 1.25em; /* 20px/16px */
