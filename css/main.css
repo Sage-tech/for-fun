@@ -64,11 +64,17 @@ h3 {
   line-height: 1.2;
   margin-bottom: 1.7em; /* 34px */
 }
-
 img {
   max-width: 100%;
   margin-bottom: 20px;
-  border-radius: 10px;
+  border-radius: 10%;
+}
+.harold,
+.luis,
+.john,
+.me{
+  margin-top: 50px;
+  border-radius: 50%;
 }
 .third {
   text-align: center;
@@ -215,18 +221,10 @@ margin-top: 100px;
 
 /* Floated Columns ------------------ */
 
-.img,
-.img {
-  width: 46.5%;
+img {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
-.img {
-  float: left;
-}
-
-.img {
-  float: right;
-}
 
 /* Float Clearfix ------------------ */
 
@@ -319,10 +317,11 @@ padding: 20px 0;
 
 
 
-img {
-  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
-}
 
 
 
 
+
+/*
+  transform: scale(1.2);
+  transition: all .5s;
